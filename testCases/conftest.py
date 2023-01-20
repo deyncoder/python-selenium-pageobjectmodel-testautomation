@@ -6,13 +6,13 @@ import pytest
 def setup():
 
     # ignore certificate errors
-    options = Options()
+    # options = Options()
     # options.add_argument('--allow-running-insecure-content')
-    options.accept_insecure_certs = True
-    options.add_argument('ignore-certificate-errors')
+    # options.accept_insecure_certs = True
+    # options.add_argument('ignore-certificate-errors')
 
 
-    driver= webdriver.Chrome(options=options)
+    driver= webdriver.Chrome()
     print("Launching chrome browser...")
     return driver
 
