@@ -3,5 +3,7 @@
 .idea/misc.xml
 .idea/vcs.xml
 .idea/workspace.xml
+.idea/inspectionProfiles/profile_settings.xml
+.idea/modules.xml
 testCases/__pycache__/conftest.cpython-39-pytest-7.1.1.pyc
 testCases/__pycache__/test_login.cpython-39-pytest-7.1.1.pyc
