@@ -51,7 +51,7 @@ class Test_001_Login:
             print('Log In Successful')
         else:
             assert False
-            self.driver.close()
+            self.driver.close() # close chromedriver
 
         # self.lp.clickSignOff()
         # print("Logout Button Clicked")
