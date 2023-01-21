@@ -18,10 +18,12 @@ class Test_001_Login:
      act_title = self.driver.title
      if act_title == "Welcome: Mercury Tours":
          assert True
+         self.driver.close()
      else:
          assert False
+         self.driver.close()
 
-     self.driver.close()
+
 
     # Test Login
     def test_login(self, setup):
@@ -44,11 +46,12 @@ class Test_001_Login:
         # validate member home page title
         if act_title == "Login: Mercury Tours":
             assert True
+            self.driver.close()
+            print('Member Webpage displayed')
+            print('Log In Successful')
         else:
             assert False
-        print('Member Webpage displayed')
-        print('Log In Successful')
-        self.driver.close()
+            self.driver.close()
 
         # self.lp.clickSignOff()
         # print("Logout Button Clicked")
