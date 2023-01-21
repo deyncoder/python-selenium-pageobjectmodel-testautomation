@@ -6,7 +6,7 @@ class LoginPage:
     button_submit_xpath = "//*[@name='submit']"
     # link_signoff_xpath = "//a[contains(text(),'SIGN-OFF')]"
 
-    # constructor
+    # Constructor
     def __init__(self, driver):
         self.driver = driver
 
@@ -24,5 +24,6 @@ class LoginPage:
     def clickSubmit(self):
         self.driver.find_element(By.XPATH, self.button_submit_xpath).click()
 
+    # Click Sign Off
     # def clickSignOff(self):
     #     self.driver.find_element(By.XPATH, self.link_signoff_xpath).click()
