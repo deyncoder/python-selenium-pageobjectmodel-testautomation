@@ -7,14 +7,14 @@ class Test_001_Login:
     username = "admin"
     password = "1234"
 
-    # Validate Guest Home Page
+    # verify guest home page
     def test_homePageTitle(self, setup):
      self.driver = setup
      self.driver.maximize_window()
      self.driver.get(self.baseURL)
      self.driver.implicitly_wait(10)
 
-     # validate guest home page title
+     # verify guest home page title
      act_title = self.driver.title
      if act_title == "Welcome: Mercury Tours":
          self.driver.close()
@@ -24,7 +24,7 @@ class Test_001_Login:
          assert False
 
 
-    # Test Login
+    # test login
     def test_login(self, setup):
 
         self.driver = setup
@@ -42,14 +42,14 @@ class Test_001_Login:
         self.driver.implicitly_wait(10)
 
         act_title = self. driver.title
-        # validate member home page title
+        # verify member home page title
         if act_title == "Login: Mercury Tours":
             self.driver.close()
             assert True
             print('Member Webpage displayed')
             print('Log In Successful')
         else:
-            self.driver.close()  # close chromedriverself.driver.close() # close chromedriver
+            self.driver.close()  # close chromedriver
             assert False
 
         # self.lp.clickSignOff()
