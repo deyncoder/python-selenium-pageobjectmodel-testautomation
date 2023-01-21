@@ -41,7 +41,6 @@ class Test_001_Login:
         self.driver.implicitly_wait(10)
 
         act_title = self. driver.title
-        self.driver.close()
         # validate member home page title
         if act_title == "Login: Mercury Tours":
             assert True
@@ -49,6 +48,7 @@ class Test_001_Login:
             assert False
         print('Member Webpage displayed')
         print('Log In Successful')
+        self.driver.close()
 
         # self.lp.clickSignOff()
         # print("Logout Button Clicked")
